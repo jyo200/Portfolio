@@ -18,12 +18,10 @@ html,body{
     background-color: black;
 }
 
-
-
 #page>#nav{
     display: flex;
-    justify-content: center; /* Center items horizontally */
-    align-items: center; /* Center items vertically */
+    justify-content: center; 
+    align-items: center;
     padding: 0px 10px;
     position: absolute;
     z-index: 9;
@@ -104,21 +102,21 @@ html,body{
 
 .flip-card-container {
     display: flex;
-  justify-content: center;  /* Add spacing between the cards */
-    padding: 20px; /* Adjust the spacing as needed */
+  justify-content: center;  
+    padding: 20px; 
 }
 
   .flip-card {
    
     background-color: transparent;
-    width: 500px; /* Adjust the width of each card as needed */
-    height: 500px; /* Adjust the height of each card as needed */
+    width: 500px; 
+    height: 500px; 
     border: 1px solid black;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    margin-right: 20px;/* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
+    margin-right: 20px;
   }
   
-  /* This container is needed to position the front and back side */
+
   .flip-card-inner {
     position: relative;
     width: 100%;
@@ -128,12 +126,12 @@ html,body{
     transform-style: preserve-3d;
   }
   
-  /* Do an horizontal flip when you move the mouse over the flip box container */
+  
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
   }
   
-  /* Position the front and back side */
+ 
   .flip-card-front, .flip-card-back {
     position: absolute;
     width: 100%;
@@ -142,13 +140,13 @@ html,body{
     backface-visibility: hidden;
   }
   
-  /* Style the front side (fallback if image is missing) */
+
   .flip-card-front {
    
     color: black;
   }
   
-  /* Style the back side */
+
   .flip-card-back {
     background-color: rgb(3, 3, 3);
     color: white;
@@ -171,10 +169,9 @@ html,body{
 
   #hover-instruction {
     text-align: center;
-    margin-top: 20px; /* Adjust the margin as needed */
+    margin-top: 20px; 
     font-size: 16px;
-    color: #666; /* Adjust the color as needed */
-}
+    color: #666;
 
 @media (max-width: 768px) {
   #text {
@@ -193,7 +190,7 @@ html,body{
   }
 }
 
-/* Media query for even smaller screens (max-width: 480px) */
+
 @media (max-width: 480px) {
   #center-nav {
       flex-direction: column;
